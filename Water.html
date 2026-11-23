@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water - BodyBlueprint HealthHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar"><a class="brand" href="index.html">BodyBlueprint</a><ul><li><a href="index.html">Home</a></li><li><a href="bmi.html">BMI &amp; BMR</a></li><li><a href="water.html" class="active">Water</a></li><li><a href="sleep.html">Sleep</a></li><li><a href="wellness.html">Wellness</a></li><li><a href="about.html">About</a></li></ul></nav>
+<header class="page-title"><h1>Daily Water Intake Tracker</h1><p>Stay hydrated and reach your daily goal.</p></header>
+<main class="container narrow">
+<section class="card"><h2>Today's water</h2>
+<div class="field"><label for="goal">Daily Water Goal (L):</label><input id="goal" type="number" step="0.1" min="0.5" placeholder="Enter water goal in liters"><p id="goalHint" style="font-size:0.85rem;color:#5d7388;margin:4px 0 0;"></p></div>
+<div class="field"><label for="consumed">Water Consumed (L):</label><input id="consumed" type="number" step="0.05" min="0" placeholder="Enter water consumed in liters"></div>
+<p>Water Intake Progress:</p>
+<meter id="waterMeter" min="0" max="100" value="0" style="width:100%;height:24px;"></meter>
+<p id="waterText">0 L consumed</p>
+<button type="button" class="btn" data-add="0.25">Add 0.25 L</button>
+<button type="button" class="btn" data-add="0.5">Add 0.5 L</button>
+<button type="button" class="btn btn-outline" id="resetWater">Reset Water Intake</button></section>
+<section class="card"><h2>Hydration tips</h2><ul class="tips">
+<li>A good starting goal is about 30 ml per kg of body weight (70 kg is about 2.1 L).</li>
+<li>Drink a glass of water with every meal.</li>
+<li>Keep a bottle near you while studying or working.</li>
+<li>Drink more when it is hot or when you exercise.</li></ul></section>
+</main>
+<footer class="footer"><p>General educational wellness information only. Not medical advice.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

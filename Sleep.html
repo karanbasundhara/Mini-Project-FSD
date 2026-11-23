@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep - BodyBlueprint HealthHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar"><a class="brand" href="index.html">BodyBlueprint</a><ul><li><a href="index.html">Home</a></li><li><a href="bmi.html">BMI &amp; BMR</a></li><li><a href="water.html">Water</a></li><li><a href="sleep.html" class="active">Sleep</a></li><li><a href="wellness.html">Wellness</a></li><li><a href="about.html">About</a></li></ul></nav>
+<header class="page-title"><h1>Sleep Tracker</h1><p>Log how long and how well you slept.</p></header>
+<main class="container narrow">
+<section class="card"><h2>Last night's sleep</h2>
+<div class="field"><label for="bed">Bedtime:</label><input id="bed" type="time"></div>
+<div class="field"><label for="wake">Wake-up Time:</label><input id="wake" type="time"></div>
+<div class="field"><label for="duration">Total Sleep Duration (hours, calculated automatically):</label><input id="duration" type="text" readonly placeholder="Fill in bedtime and wake-up time"></div>
+<div class="field"><label for="quality">Sleep Quality:</label><select id="quality"><option value="">Select sleep quality</option><option value="1">Very Poor</option><option value="2">Poor</option><option value="3">Average</option><option value="4">Good</option><option value="5">Excellent</option></select></div>
+<button type="button" class="btn" id="saveSleep">Save sleep log</button>
+<p id="sleepMsg" style="margin:10px 0 0;font-weight:600;"></p></section>
+<section class="card"><h2>Sleep tips</h2><ul class="tips">
+<li>Most adults need 7 to 9 hours of sleep.</li>
+<li>Keep the same bedtime and wake-up time every day.</li>
+<li>Avoid screens for an hour before bed.</li>
+<li>Keep your room dark, quiet and cool.</li></ul></section>
+</main>
+<footer class="footer"><p>General educational wellness information only. Not medical advice.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
